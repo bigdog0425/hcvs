@@ -1,18 +1,19 @@
-班級經營管理APP
+〈班級經營管理APP〉
 
 程式功能： 
-a.使用者資料管理M_AP：1.新增，修改，刪除，查詢，以CSV檔案批次新增 2.登入
-b.積分管理AP：1.積分管理(（新增，修改，刪除，查詢，以CSV檔案批次新增） 2.積分查詢 3.排序(Top 10) 
-c.使用者查詢U_AP：（積分歷程紀錄，卡片兌換記錄）
-d.卡片AP：1.卡片兌換，2.卡片使用
-e.最新消息AP：1.最新消息 2.可接任務
+a.使用者資料管理User Manager AP：1.新增，修改，刪除，查詢，以CSV檔案批次新增 2.登入
+b.積分管理Point Manager AP：1.積分管理(（新增，修改，刪除，查詢，以CSV檔案批次新增） 2.積分查詢 3.排序(Top 10) 
+c.使用者查詢User Query AP：（積分歷程紀錄，卡片兌換記錄）
+d.卡片Card AP：1.卡片兌換，2.卡片使用
+e.首頁Index AP：1.最新消息 2.可接任務
 
-網頁程式開發資料表： 
-1.user_data個人資料表：序號SN，使用者編號8碼(學號，身分證號)UserID，密碼Passwd，班級Class，
-  姓名Name，座號SeatNum， 身份status(學生s,老師t,管理員m)，積分Point，職業Job，性別Sex，電話Phone，備用欄位Note 
-2.quest任務積分表：任務ID，任務名稱，職業需求，完成後獲得積分，數量，截止日期， 
-3.card卡片資料表表：卡片CID（Ａ999第一碼為分類號，後三碼序號），兌換券名稱CardName，兌換所需積分Point， 
-  兌換券剩餘數量（99代表無限），限制身份（Ｘ代表無限制） 
-4.point exchange 卡片兌換記錄表：兌換日期Date，兌換人UID，執行人MID，卡片CID，兌換積分Point 
-5.point積分記錄表：日期Date，執行人MID，被登記人UID，事項名稱Item，積分Point，分類Class 
-6.加減分項目表：序號SN，事項名稱Item，加減積分Point
+班級經營管理資料表(Data Table)： 
+1.User_Data 個人資料表：序號SN，使用者編號8碼(學號，身分證號)UserID，密碼Passwd，班級Class，
+  姓名Name，座號SeatNum， 身份status(學生s,老師t,管理員m)，積分Point，職業Career，性別Sex，電話Phone 
+2.Quest 任務資料表：任務QID，任務名稱Quest，職業需求Career，完成後獲得積分Point，數量Quantity，截止日期Deadline 
+3.Card 卡片資料表：卡片CID（A999第一碼英文為分類號，後三碼數字序號），兌換券名稱CardName，兌換所需積分Point， 
+  兌換券剩餘數量Quantity（99代表無限），限制身份Career（X代表無限制）
+4.Career 職業資料表：職業代號CrID，職業Career，職業說明Explain
+5.Point Exchange 卡片兌換記錄表：兌換日期Date，兌換人UID，執行人MID，卡片CID，兌換積分Point 
+6.Event Record 計分事件紀錄表：序號SN，事件名稱Event，加減積分Point，職業需求Career
+7.Point Record 積分記錄表：日期Date，執行人MID，被登記人UID，事項名稱Item，積分Point，分類Class
