@@ -9,8 +9,8 @@ e.首頁Index AP：1.最新消息 2.可接任務
 
 班級經營管理資料表(Data Table)： 
 1.User_Data 個人資料表：序號SN，使用者編號8碼(學號，身分證號)UserID，密碼Passwd，班級Class，
-  姓名Name，座號SeatNum， 身份status(學生s,老師t,管理員m)，積分Point，職業Career，性別Sex，電話Phone 
-2.Quest 任務資料表：任務QID，任務名稱Quest，職業需求Career，完成後獲得積分Point，數量Quantity，截止日期Deadline 
+  姓名Name，座號SeatNum， 身份status(學生s,老師t,管理員m)，積分Point，等級Level，職業Career，性別Sex，電話Phone 
+2.Quest 任務資料表：任務QID，任務名稱Quest，等級Level，職業需求Career，完成後獲得積分Point，數量Quantity，截止日期Deadline 
 3.Card 卡片資料表：卡片CID（A999第一碼英文為分類號，後三碼數字序號），兌換券名稱CardName，兌換所需積分Point， 
   兌換券剩餘數量Quantity（99代表無限），限制身份Career（X代表無限制）
 4.Career 職業資料表：職業代號CrID，職業Career，職業說明Explain
